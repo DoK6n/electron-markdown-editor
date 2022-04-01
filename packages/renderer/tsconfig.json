@@ -7,19 +7,23 @@
     "skipLibCheck": true,
     "strict": true,
     "isolatedModules": true,
-
-    "types" : ["node"],
+    "jsx": "react",
+    "types": [
+      "node"
+    ],
     "baseUrl": ".",
     "paths": {
       "/@/*": [
         "./src/*"
       ]
     },
-    "lib": ["ESNext", "dom", "dom.iterable"]
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable"
+    ]
   },
-
   "include": [
-    "src/**/*.vue",
     "src/**/*.ts",
     "src/**/*.tsx",
     "types/**/*.d.ts",
@@ -28,6 +32,6 @@
   ],
   "exclude": [
     "**/*.spec.ts",
-    "**/*.test.ts",
+    "**/*.test.ts"
   ]
 }
