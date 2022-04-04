@@ -1,6 +1,10 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import React from 'react';
+import ReactDomClient from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-ReactDom.render(<App />, document.getElementById('root'));
+const rootElement = document.getElementById('root');
+if (!rootElement) throw new Error('Filed to find the root element');
+const root = ReactDomClient.createRoot(rootElement);
+
+root.render(<App />);

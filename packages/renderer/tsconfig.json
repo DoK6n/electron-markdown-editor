@@ -7,31 +7,15 @@
     "skipLibCheck": true,
     "strict": true,
     "isolatedModules": true,
+    "esModuleInterop": true,
     "jsx": "react",
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "/@/*": [
-        "./src/*"
-      ]
+      "/@/*": ["./src/*"]
     },
-    "lib": [
-      "ESNext",
-      "dom",
-      "dom.iterable"
-    ]
+    "lib": ["ESNext", "dom", "dom.iterable"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "types/**/*.d.ts",
-    "../../types/**/*.d.ts",
-    "../preload/contracts.d.ts"
-  ],
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "types/**/*.d.ts", "../../types/**/*.d.ts", "../preload/contracts.d.ts"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }
